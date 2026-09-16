@@ -5,23 +5,7 @@
 using namespace std;
 
 // Lab 2 - Task 6: Dynamic 2D Array for Student Marks
-/*
-  Memory Layout Sketch (2 Students, 3 Subjects):
-  
-  STACK                          HEAP
- +------------+                 +-----------------------+
- |   marks    | -------------> | marks[0] (int*)       | -------------> Row 0 (Student 1):
- | (int**)    |  [Holds heap    | (Points to Row 0)     |                +--------------+--------------+--------------+
- |            |   address of    +-----------------------+                | marks[0][0]  | marks[0][1]  | marks[0][2]  |
- +------------+   pointer arr)  | marks[1] (int*)       | --------+      |     50       |     60       |     70       |
-                                | (Points to Row 1)     |         |      +--------------+--------------+--------------+
-                                +-----------------------+         |
-                                  Array of 2 Row Pointers         +----> Row 1 (Student 2):
-                                                                         +--------------+--------------+--------------+
-                                                                         | marks[1][0]  | marks[1][1]  | marks[1][2]  |
-                                                                         |     80       |     40       |     90       |
-                                                                         +--------------+--------------+--------------+
-*/
+
 int main() {
     int rows = 0;
     int cols = 0;
