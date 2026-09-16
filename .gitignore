@@ -71,3 +71,6 @@ Testing/
 # IDE
 .vscode/
 .idea/
+# Documents
+*.pdf
+*.docx
